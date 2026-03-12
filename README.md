@@ -1,83 +1,85 @@
-🔍 AI Content Verification & Blockchain Audit Platform
+# 🔍 AI Content Verification & Blockchain Audit Platform
 
-An AI-powered platform for content authenticity analysis with cloud-based audit logging and blockchain verification.
+An AI-powered platform for **content authenticity analysis** with **cloud-based audit logging** and **blockchain verification**.
 
-This system helps verify the credibility of digital content such as:
+The system verifies the credibility of digital content such as:
 
-News articles
+- News Articles  
+- Online Publications  
+- User Generated Content  
+- Social Media Posts  
 
-Online publications
+AI evaluates **content reliability**, while results are stored in **cloud infrastructure and blockchain** to ensure **transparency, traceability, and tamper-proof verification**.
 
-User-generated content
+---
 
-Social media posts
+# 🌟 Key Features
 
-AI analyzes the credibility and authenticity of the content, while the results are stored in Cloud Storage and Blockchain to ensure transparency, traceability, and tamper-proof verification.
+## 🤖 AI Authenticity Scoring
 
-🌟 Key Features
-🤖 AI Authenticity Scoring
+The platform uses **Gemini 2.5 Flash by Google** to analyze content and generate:
 
-The platform uses Google's Gemini 2.5 Flash model to analyze content and generate:
+- Confidence Score  
+- AI Analysis Result  
+- Structured JSON Output  
 
-Confidence Score
+This enables automated **credibility evaluation of digital content**.
 
-AI Analysis Result
+---
 
-Structured JSON Output
+## 🧹 Data Cleansing Pipeline
 
-This allows the system to evaluate the reliability of information automatically.
+The backend **Node.js API** performs preprocessing before AI analysis:
 
-🧹 Data Cleansing Pipeline
+- Input Validation  
+- Data Normalization  
+- Structured JSON Transformation  
 
-The Node.js API layer handles data preprocessing before analysis:
+This ensures **consistent and clean input** for AI processing.
 
-Input Validation
+---
 
-Data Normalization
+## ☁️ Immutable Cloud Logging
 
-Structured JSON Transformation
+All analysis results are stored in **Amazon S3 on AWS** to create a secure **audit trail**.
 
-This ensures the AI model receives clean and standardized input data.
+**Benefits include:**
 
-☁️ Immutable Cloud Logging
+- Historical verification  
+- Protection against data tampering  
+- Transparent auditing  
 
-All AI analysis results are securely stored in Amazon Web Services Amazon S3 to create a reliable audit trail.
+---
 
-Benefits include:
+## ⛓️ Blockchain Verification Registry
 
-Historical verification capability
+A **Solidity smart contract** registers verification records on blockchain.
 
-Protection against data tampering
+**Capabilities:**
 
-Transparent audit records
+- Verification record registration  
+- Attestation storage  
+- Content hash verification  
 
-⛓️ Blockchain Verification Registry
+This ensures that verification records are **immutable, transparent, and publicly auditable**.
 
-A Solidity Smart Contract is used to register verification results on blockchain.
+---
 
-The smart contract enables:
+## ⚙️ Operational Excellence
 
-Verification record registration
+The system runs in a **production-ready environment** using:
 
-Attestation storage
+- Amazon EC2 (Amazon Linux)  
+- Node.js Runtime  
+- PM2 Process Manager  
 
-Content hash verification
+This allows the service to operate **24/7 with high reliability and scalability**.
 
-This ensures that verification records are immutable, transparent, and publicly auditable.
+---
 
-⚙️ Operational Excellence
+# 🧠 System Architecture
 
-The system is designed to run in a production environment using:
-
-Amazon Web Services Amazon EC2 (Amazon Linux)
-
-Node.js Runtime
-
-PM2 Process Manager
-
-This architecture enables the service to run 24/7 with high reliability and scalability.
-
-🧠 System Architecture
+```text
 User / Dashboard
        │
        ▼
@@ -94,48 +96,68 @@ Backend API (Node.js / Express)
                │
                ▼
         Smart Contract (Solidity)
-📂 Project Structure
+```
+
+---
+
+# 📂 Project Structure
+
+```text
 ai-verificationAWS/
 │
 ├── AIVerificationRegistryV2.sol
 │   Smart Contract (Solidity)
-│   Used for recording audit trails and verification attestations on blockchain
+│   Records verification audit trails on blockchain
 │
 ├── server.js
 │   Backend API (Node.js / Express)
-│   Handles AI analysis logic and integration with Cloud and Blockchain
+│   Handles AI analysis and system integration
 │
 ├── abi.json
-│   Application Binary Interface
-│   Used for interacting with smart contract functions
+│   Smart contract interface (ABI)
 │
 ├── dashboard/
 │   React.js frontend dashboard
 │
 │   ├── src/
-│   │   Main source code for UI components
+│   │   Main UI source code
 │   │
 │   └── public/
-│       Static assets for web hosting
+│       Static assets
 │
 ├── artifacts/
 │   Compiled smart contract artifacts
-│   Used for deployment and integration
 │
 ├── attest_submit.js
-│   Script for submitting verification attestations to blockchain
+│   Script for submitting blockchain attestations
 │
 ├── fetch_all_events.mjs
-│   Script for retrieving historical blockchain event logs
-│   Used for audit and verification purposes
+│   Script for retrieving historical blockchain events
 │
 ├── package.json
-│   Project dependencies and runtime scripts
+│   Project dependencies and scripts
 │
 ├── .env.example
-│   Template for environment variables
-│   (API keys, cloud credentials, etc.)
+│   Environment variable template
 │
 └── .gitignore
-    Specifies files that should not be committed
-    (node_modules, secrets, etc.)
+    Files excluded from Git tracking
+```
+
+---
+
+# 🚀 Use Cases
+
+This platform can be applied to:
+
+- Fake News Detection  
+- AI-assisted Fact Checking  
+- Content Authenticity Verification  
+- Digital Evidence Auditing  
+- Media Trust Verification  
+
+---
+
+# 📜 License
+
+This project is intended for **research, educational, and prototype purposes**.
