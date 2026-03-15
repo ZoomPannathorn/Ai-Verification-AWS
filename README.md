@@ -75,6 +75,11 @@ The system runs in a **production-ready environment** using:
 
 This allows the service to operate **24/7 with high reliability and scalability**.
 
+## Dashboard Interface
+
+![AI Verification Dashboard 1](./images/dashboard-1.png)
+
+![AI Verification Dashboard 2](./images/dashboard-2.png)
 ---
 
 # 🧠 System Architecture
